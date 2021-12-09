@@ -8,4 +8,4 @@ def home(request):
 
 def add(request):
     sum = int(request.GET["a"]) + int(request.GET["b"])
-    return render(request, 'summation.html', {'sum': sum})
+    return render(request, 'home.html', {'sum': sum})
