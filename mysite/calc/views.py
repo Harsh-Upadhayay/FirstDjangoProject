@@ -7,5 +7,5 @@ def home(request):
     return render(request, 'home.html', {'name':chr(int(100*random.random()))})
 
 def add(request):
-    sum = int(request.GET["a"]) + int(request.GET["b"])
+    sum = int(request.POST["a"]) + int(request.POST["b"])
     return render(request, 'summation.html', {'sum': sum})
