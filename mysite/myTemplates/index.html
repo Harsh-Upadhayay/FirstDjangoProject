@@ -49,22 +49,12 @@
 								
 								<span class="icon-right"><i class="zmdi zmdi-apps"></i></span>
 								<div class="title owl-carousel">
+									{% for song in songs %}
 								    <div class="item">
-										<div class="song__name">Sorry The Movement</div>
+										<div class="song__name">{{song}}</div>
 										<p class="album__name">Justin Bieber</p>
 								    </div>
-								    <div class="item">
-										<div class="song__name">Passenger Let Her Go</div>
-										<p class="album__name">Passenger</p>
-								    </div>
-								    <div class="item">
-										<div class="song__name">Counting Stars...</div>
-										<p class="album__name">OneRepublic</p>
-								    </div>
-								    <div class="item">
-										<div class="song__name">Waiting For Love</div>
-										<p class="album__name">Avicii</p>
-								    </div>
+									{% endfor %}
 								</div>
 								
 							</div>

@@ -20,5 +20,6 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('travello', include('travello.urls')),
     path('', include('musicPlayer.urls')),
+    path('calc/', include('calc.urls')),
     path('admin/', admin.site.urls),
 ]
